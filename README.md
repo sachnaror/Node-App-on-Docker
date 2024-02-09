@@ -47,6 +47,9 @@ docker push schnarordocker/node-app-test
 on https://labs.play-with-docker.com/
 
 docker pull schnarordocker/node-app-test
+
 docker images
+
 docker run -p 5500:5500 schnarordocker/node-app-test
+
 and the...click on blue port number link 
