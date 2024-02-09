@@ -13,6 +13,7 @@ docker run -it node /bin/bash
 docker build -t basic-app .
 
 docker build -t basic-app:v2 .
+
 docker run --name basic-app-container-v2 -p 5500:5500
 
 
@@ -26,6 +27,7 @@ docker run --name basic-app-container -p 5500:5500 --rm -v /Users/homesachin/Des
 
 https://hub.docker.com/r/schnarordocker/node-app
 
+
 docker pull schnarordocker/node-app
 
 
@@ -33,7 +35,9 @@ docker pull schnarordocker/node-app
 
 
 create repo on docker as : node-app-test , with tag as: testing
+
 docker buildx build --platform linux/amd64 -t schnarordocker/node-app-test:testing .
+
 docker push schnarordocker/node-app-test
 
 
